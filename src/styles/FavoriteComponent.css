@@ -1,0 +1,81 @@
+.dynamic-product-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 300px; /* Slightly larger */
+  height: 420px; /* Adjusted for better spacing */
+  background-color: #ffffff; /* White background for a cleaner look */
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Softer shadow for modern design */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 15px;
+}
+
+.dynamic-product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Enhanced hover effect */
+}
+
+.dynamic-product-img {
+  margin-top: 10px;
+  height: 160px; /* Increased size for better visibility */
+  width: 100%; /* Full width */
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.dynamic-product-title {
+  font-size: 22px; /* Slightly larger font for titles */
+  font-weight: bold;
+  color: #495057; /* Darker grey for better readability */
+  margin-top: 12px;
+  text-align: center; /* Center align the title */
+}
+
+.dynamic-product-description {
+  font-size: 14px;
+  color: #6c757d; /* Consistent with theme */
+  text-align: center;
+  margin: 10px 0;
+}
+
+.dynamic-product-price {
+  color: #dc3545; /* Bootstrap's danger color for prices */
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.card-rate {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.card-rate img {
+  height: 20px; /* Slightly larger star */
+  margin-left: 5px;
+}
+
+.card-rate p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.dynamic-product-addToCart {
+  width: 100%; /* Full-width button */
+  margin-top: auto; /* Align button to the bottom */
+  border-radius: 8px;
+  border: none;
+  padding: 12px;
+  background-color: #007bff; /* Blue for buttons */
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.dynamic-product-addToCart:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.02);
+}

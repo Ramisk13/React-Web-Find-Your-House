@@ -1,0 +1,46 @@
+/* Navigation Link Styles */
+.nav-link {
+    color: #555; /* Default grey color */
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+  }
+  
+  .nav-link:hover {
+    color: #007bff; /* Blue on hover */
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Position below the text */
+    left: 50%; /* Start at center */
+    width: 0%; /* Default width */
+    height: 2px;
+    background-color: #007bff; /* Blue underline */
+    transition: all 0.3s ease; /* Smooth expansion */
+  }
+  
+  .nav-link:hover::after {
+    width: 120%; /* Expand underline */
+    left: -10%; /* Adjust for center alignment */
+  }
+  
+  /* Sign In Button */
+  .sign-in-button {
+    background-color: #007bff;
+    color: #fff;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .sign-in-button:hover {
+    background-color: #fff; /* White on hover */
+    color: #007bff; /* Blue text */
+  }
+  

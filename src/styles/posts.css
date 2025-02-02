@@ -1,0 +1,127 @@
+#listing {
+    font-family: Arial, sans-serif;
+  }
+  
+  .title-add {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title-container, .add-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .title-container h1 {
+    font-size: 24px;
+    color: #343a40;
+    margin: 0;
+    margin-left: 10rem;
+    cursor: pointer; /* Cursor to indicate clickability */
+    transition: color 0.3s ease;
+  }
+  
+  .title-container h1:hover {
+    color: #007bff; /* Highlight on hover */
+  }
+
+  .search-bar {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    outline: none;
+    transition: border-color 0.3s ease;
+    margin-left: 4rem;
+  }
+  
+  .search-bar:focus {
+    border-color: #007bff;
+  }
+  
+  .add-container{
+    margin-right: 10rem;
+  }
+
+  .add-container h2 {
+    font-size: 18px;
+    color: #6c757d;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .add-container h2:hover {
+    color: #007bff; 
+  }
+
+  .icon-button {
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .icon-button:hover {
+    transform: scale(1.1);
+  }
+  
+  .filter {
+    margin-left: 15px;
+    filter: grayscale(50%);
+  }
+  
+  .filter:hover {
+    filter: grayscale(0%);
+  }
+  
+  .dynamic-products-body {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    justify-content: center;
+    gap: 3rem; /* Reduced from 20px to 10px */
+  }
+  
+
+  #open-filters-container {
+    position: absolute;
+    height: 28px;
+    top: 45px;
+    right: 24px;
+    cursor: pointer;
+  }
+  
+  #range-body {
+    position: absolute;
+    top: 144px; /* Adjusted top position to bring it closer */
+    left: 10rem; /* Adjusted right position to align better */
+    background-color: #fafafa;
+    border-radius: 8px;
+    z-index: 10;
+    overflow: hidden;
+    padding: 10px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  }
+  
+  #range-body.visible {
+    width: 220px;
+    height: auto;
+    opacity: 1;
+  }
+  
+  #range-body p {
+    display: inline-block;
+  }
+
+.no-properties{
+    font-size: 40px;
+    font-weight: 500;
+  }
+  
